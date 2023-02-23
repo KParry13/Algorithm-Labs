@@ -3,8 +3,8 @@
 # Leave a comment above the function stating the time complexity.
 # Send a screenshot of your solution and time complexity comment to your personal instructors chat.
 
-#      time complexity
-num = [20, 33, 109, 75, 96]
+#   O(n)  time complexity
+num = [20, 33, 10, 75, 96]
 def less_than_100(num):
     
     n=100
@@ -12,7 +12,9 @@ def less_than_100(num):
         if i >= n:
             print('this list has some numbers over or equal too 100')
             return False
-      
+    print('this list is all under 100')
+    return True 
+    
 
 less_than_100(num)
 
