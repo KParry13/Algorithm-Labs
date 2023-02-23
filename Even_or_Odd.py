@@ -4,7 +4,7 @@
 # Send a screenshot of your solution and time complexity comment to your personal instructors chat.
 
 
-#     time comlpexity
+#    O(1) time comlpexity
 def even_odd(n):
     
     if (n==0):
