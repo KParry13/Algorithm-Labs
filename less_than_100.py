@@ -18,6 +18,16 @@ def less_than_100(num):
 
 less_than_100(num)
 
+
+def hundred_checker(num_list: list):
+    for number in num_list:
+        if number <= 100:
+            return False
+    return True
+
+results =hundred_checker([20, 40, 101])
+print (results)
+
     
     
     

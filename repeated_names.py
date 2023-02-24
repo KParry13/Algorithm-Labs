@@ -5,16 +5,31 @@
 
 #   O(n)   time complexity
 
-names1 = ['Josh', 'Ben', 'Josh', 'Kayla', 'Sue']
+# names1 = ['Josh', 'Ben', 'Josh', 'Kayla', 'Sue']
 
-def repeat_name(names1):
-    names2 = ['Josh', 'Ben', 'Kayla', 'Sue']
-    for name in names1:
-        if names1 != names2:
-            print('this list has duplicates')
-            return True
-    print ('this list has no repeated names')
-    return False
+# def repeat_name(names1):
+#     names2 = []
+#     for name in range(len(names1)):
+#         if names1 == names2:
+#             print('this list has duplicates')
+#             return True
+#     print ('this list has no repeated names')
+#     return False
     
-repeat_name(names1)
+# repeat_name(names1)
+
+
+def duplicate_name_checker(name_list: list):
+    unique_names = []
+    for name in name_list:
+        if name not in unique_names:
+            unique_names.append(name)
+    if len(name_list) == len(unique_names):
+        return False
+    else:
+        return True
+        
+
+result = duplicate_name_checker(['Josh', 'Ben', 'Josh', 'Kayla', 'Sue'])
+print (result)
 

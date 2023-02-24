@@ -19,4 +19,15 @@ def even_odd(n):
 even_odd(106)
 
 
+
+#   O(1)  time complexity
+def even_odd(num:int):
+    if num % 2 == 0:
+        return True
+    else:
+        return False
+    
+result = even_odd(100)
+print(result)
+
  
